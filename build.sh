@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
-# Exit immediately if a command exits with a non-zero status
-set -e
 
-# Update package lists and install Tesseract OCR package (Linux)
+# Install Tesseract OCR
 apt-get update && apt-get install -y tesseract-ocr
 
-# Install Python dependencies from requirements.txt
+# Install Python dependencies
 pip install -r requirements.txt
-
