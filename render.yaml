@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: ocr-product-info-scanner
+    env: python
+    buildCommand: ./build.sh
+    startCommand: streamlit run app.py --server.port 10000 --server.address 0.0.0.0
